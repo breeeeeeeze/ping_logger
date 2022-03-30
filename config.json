@@ -1,0 +1,7 @@
+{
+	"traceInterval": 120,
+	"hostTarget": "8.8.8.8",
+	"packetCount": 100,
+	"timeout": 10,
+	"tickFrequency": 30
+}

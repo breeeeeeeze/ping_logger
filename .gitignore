@@ -1,0 +1,7 @@
+*.swp
+__pycache__/
+archive/
+log*.txt
+ping_report*.txt
+ping_report*.csv
+temp_log*.txt
