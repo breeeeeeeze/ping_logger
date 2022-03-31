@@ -59,8 +59,6 @@ class PingLogger:
 		rttAvg = [float(result['rtt_avg']) for result in self.results if result['rtt_avg'] != 'NaN']
 		rttMin = min(float(result['rtt_min']) for result in self.results if result['rtt_min'] != 'NaN')
 		rttMax = max(float(result['rtt_max']) for result in self.results if result['rtt_max'] != 'NaN')
-
-		print(self.results)
 		
 		with open(self.filename + '.txt', 'w') as f:
 			f.write(f'--- PING REPORT {time.strftime("%d.%m.%Y %H:%M",self.timeStart)} for target {self.config["hostTarget"]} ---\n\n')
